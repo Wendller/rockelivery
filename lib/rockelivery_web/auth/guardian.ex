@@ -2,8 +2,8 @@ defmodule RockeliveryWeb.Auth.Guardian do
   use Guardian, otp_app: :rockelivery
 
   alias Rockelivery.Error
-  alias Rockelivery.Users.User
   alias Rockelivery.Users.Get, as: UserGet
+  alias Rockelivery.Users.User
 
   def subject_for_token(%User{id: id}, _claims) do
     sub = to_string(id)

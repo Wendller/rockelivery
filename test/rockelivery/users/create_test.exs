@@ -4,8 +4,9 @@ defmodule Rockelivery.Users.CreateTest do
   import Mox
   import Rockelivery.Factory
 
-  alias Rockelivery.Users.{User, Create}
   alias Rockelivery.Error
+  alias Rockelivery.Users.Create
+  alias Rockelivery.Users.User
   alias Rockelivery.ViaCep.ClientMock
 
   describe "call/1" do
